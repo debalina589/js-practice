@@ -1,0 +1,48 @@
+.style_button{
+    display: flex;
+    gap: 20px;
+   
+    
+}
+
+.style{
+   padding: 50px;
+    background-color: rgb(241, 241, 166);
+    align-items: center;
+}
+    .home{
+   padding: 20px;
+   font-size: large;
+    align-items: center;
+}
+ .youtube{
+        padding: 20px;
+        font-size: large;
+         align-items: center;
+    }
+
+ .draw{
+    padding: 50px;
+ }   
+.button{
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    margin: 1px;
+    gap: 5px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+#grey{
+    background-color: grey;
+}
+#orange{
+    background-color: rgb(255, 153, 0);
+}
+#blue{
+    background-color: blue;
+}
+#pink{
+    background-color: pink;
+}
+

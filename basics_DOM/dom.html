@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #212121 ; color: aliceblue;">
+    <center>
+    <h1 class="first"> DOM </h1>
+    <h2 class="second">Start</h2>
+    <h3 class="third">Now</h3>
+
+
+    <p id="demo">Paragraph 1</p>
+    <p id="test"></p>
+    <p id="st">Paragraph 3</p>
+    </center>
+    
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thusday</div>
+    </div>
+</body>
+<script>
+        //const data = document.getElementById("test");
+        //document.getElementById("test").innerHTML = "Paragraph 2..."
+
+       // document.getElementsByTagName("p")[1].innerHTML = "JavaScript";
+
+       // document.getElementsByClassName("third")[0].innerHTML = "Learn DOM in JS";
+    const parent = document.querySelector('.parent')
+    //console.log(parent);
+    
+   // console.log(parent.children);
+    //console.log(parent.children[3].innerHTML);
+
+    // for (let i = 0; i < parent.children.length; i++) {
+    //     console.log(parent.children[i].innerHTML);
+           
+    // }
+    parent.children[1].style.color = "orange"
+    parent.children[3].style.color = "green"
+    
+    
+    //console.log(parent.firstElementChild);
+    //console.log(parent.lastElementChild);
+    //console.log(parent.secondElementChild); undefined
+
+   const dayOne = document.querySelector('.day')
+   // console.log(dayOne);
+  // console.log(dayOne.parentElement);
+  // console.log(dayOne.nextElementSibling);
+
+   console.log("Nodes : ", parent.childNodes);
+   
+    
+
+
+    </script>
+
+</html>

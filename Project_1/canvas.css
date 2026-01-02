@@ -1,0 +1,56 @@
+.button_controller{
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+    align-items: center;
+}
+
+.home {
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    padding: auto;
+}
+.youtube {
+    width: 100px;
+    height: 50px;
+    font-size: large;
+    padding: auto;
+}
+.canvas {
+    
+    align-items: center;
+}
+
+
+.button{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin: 10px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+#grey {
+    background-color: gray;
+}
+ #orange {
+    background-color: orange;
+ }
+
+ #blue {
+    background-color: blue;
+ }
+
+ #pink {
+    background-color: pink;
+ }
+
+.style_button{
+ padding: 10px;
+ background-color: rgb(244, 240, 236);
+}
+
+.style{
+ padding: 50px;
+}
