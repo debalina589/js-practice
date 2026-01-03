@@ -2,7 +2,8 @@
     display: flex;
     gap: 50px;
     padding: 50px;
-    align-items: center;
+    justify-content: center;
+    
 }
 
 .home {
@@ -10,16 +11,14 @@
     height: 50px;
     font-size: large;
     padding: auto;
+    
 }
 .youtube {
     width: 100px;
     height: 50px;
     font-size: large;
     padding: auto;
-}
-.canvas {
-    
-    align-items: center;
+   
 }
 
 
@@ -48,9 +47,11 @@
 
 .style_button{
  padding: 10px;
- background-color: rgb(244, 240, 236);
+ background-color: rgb(231, 167, 99);
+ 
 }
 
 .style{
  padding: 50px;
+ 
 }

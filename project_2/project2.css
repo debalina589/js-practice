@@ -1,0 +1,55 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  padding: 15px;
+  background: #f3e1e1;
+}
+
+nav .button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav button a {
+  text-decoration: black;
+  color: rgb(23, 20, 20);
+  font-size: large;
+}
+
+/* Center the BMI calculator */
+body {
+  min-height: 50vh;
+  
+}
+
+.container {
+  min-height: calc(100vh - 70px); /* space for navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Form layout */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Results & guide centered */
+#results,
+#weight-guide {
+  margin-top: 15px;
+  text-align: center;
+}

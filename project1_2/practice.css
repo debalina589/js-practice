@@ -1,48 +1,53 @@
-.style_button{
-    display: flex;
-    gap: 20px;
-   
-    
+.style_button {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
 }
 
-.style{
-   padding: 50px;
-    background-color: rgb(241, 241, 166);
-    align-items: center;
+.style {
+  padding: 50px;
+  background-color: rgb(241, 241, 166);
+  justify-content: center;
 }
-    .home{
-   padding: 20px;
-   font-size: large;
-    align-items: center;
+.home {
+  padding: 20px;
+  font-size: large;
 }
- .youtube{
-        padding: 20px;
-        font-size: large;
-         align-items: center;
-    }
-
- .draw{
-    padding: 50px;
- }   
-.button{
-    width: 100px;
-    height: 100px;
-    border: 2px solid black;
-    margin: 1px;
-    gap: 5px;
-    box-sizing: border-box;
-    display: inline-block;
-}
-#grey{
-    background-color: grey;
-}
-#orange{
-    background-color: rgb(255, 153, 0);
-}
-#blue{
-    background-color: blue;
-}
-#pink{
-    background-color: pink;
+.youtube {
+  padding: 20px;
+  font-size: large;
 }
 
+.draw {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.colors {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.button {
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  margin: 1px;
+  gap: 5px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+#grey {
+  background-color: grey;
+}
+#orange {
+  background-color: rgb(255, 153, 0);
+}
+#blue {
+  background-color: blue;
+}
+#pink {
+  background-color: pink;
+}
