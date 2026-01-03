@@ -1,0 +1,30 @@
+.p1{
+    margin-top: 20px;
+    gap: 80px;
+    justify-content: center;
+    display: flex;
+
+}
+
+h1{
+    text-align: center;
+    padding: 30px;
+    background-color: lavenderblush;
+    margin: 0;
+}
+.p11 img{
+  width: 300px;
+  height: 400px;
+ 
+}
+button{
+    margin-top: 10px;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+   
+}
+button a{
+    text-decoration: solid double;
+    color: crimson;
+}
