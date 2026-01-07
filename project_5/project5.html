@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="project5.css" />
+  </head>
+  <body style="background-color: #252525; color: #fff">
+    <nav>
+      <div class="button">
+        <button><a href="/" aria-current="page">Home</a></button>
+        <button>
+          <a target="_blank" href="https://www.youtube.com">Youtube Channel</a>
+        </button>
+      </div>
+    </nav>
+    <div id="wrapper">
+      <h1>Number Guessing Game</h1><br>
+      <p style="font-size: large;">Try and guess a random number between<b style="color: cyan;"> 1 and 100</b></p><br>
+      <p style="font-size: large;">You have<b style="color: aqua;"> 10 attempts</b> to guess the right number.</p><br>
+      <br />
+      <form class="form">
+        <label for="guessField" id="guess">Guess a number </label> 
+        <input type="text" id="guessField" class="guessField" />
+        <input
+          type="submit"
+          id="subt"
+          value="Submit guess"
+          class="guessSubmit"
+        />
+      </form>
+      <div class="resultParas">
+        <p style="font-size: large; ">Previous Guesses : <span class="guesses"></span></p>
+       <br><p style="font-size: large;">Guesses Remaining : <span class="lastResult">10</span></p>
+        <p class="lowOrHi"></p>
+      </div>
+    </div>
+    <script src="project5.js"></script>
+  </body>
+</html>
