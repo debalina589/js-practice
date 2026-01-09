@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Start Should change the Background</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <h3 id="startButton"></h3>
+
+</body>
+<script>
+//    setInterval(function(){
+//     console.log("Radha", Date.now());
+    
+//    }, 3000)
+ const sayButton = function () {
+     console.log("Please");
+    
+     document.querySelector('p').innerHTML = `${parseInt(Math.random()) + 1}`
+}
+
+
+document.querySelector("#start").addEventListener('click', function(){
+    const startButton = setInterval(sayButton, 2000)
+    document.querySelector('#startButton').innerHTML = "Start The Button"
+  // document.querySelector('p').innerHTML = "I Win"
+    console.log("Start");
+    document.querySelector("#stop").addEventListener('click', function(){
+   clearInterval(startButton)
+    console.log("Stop");
+})
+})
+
+// const sayDate = function(str){
+//     console.log(str, Date.now());
+// }
+// const intervalId = setInterval(sayDate, 1000, "hi")
+// clearInterval(intervalId)
+</script>
+</html>

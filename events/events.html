@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html Events</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://as1.ftcdn.net/v2/jpg/02/65/64/24/1000_F_265642486_IXw9DQVzjTfAzT8xMtTBXBvYD8Who6Fw.jpg" alt="photoshop"></li>
+            <li><img width="200px" id="japan" src="https://as1.ftcdn.net/v2/jpg/04/01/43/06/1000_F_401430617_QU5FmwCbN3oiysrAnVN2yXreAkbPOESe.jpg" alt=""></li>
+            <li><img width="200px" id="river" src="https://as2.ftcdn.net/v2/jpg/01/64/62/13/1000_F_164621341_vA1ZtJNeXpctAy7ASvEMtl5R6RG1pzOa.jpg" alt=""></li>
+            <li><img width="200px" id="owl" src="https://as1.ftcdn.net/v2/jpg/03/22/52/98/1000_F_322529875_xskoq6Pg8vzxnDR3FNigstBWZAC2g14U.jpg" alt="" ></li>
+            <li><img width="200px" id="prayer" src="https://as2.ftcdn.net/v2/jpg/00/14/92/13/1000_F_14921374_cxnqH33QN7vKSTDyvrNZRCHqyWXiBBWd.jpg" alt=""></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
+        </ul>
+    </div>
+    
+</body>
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('Devine Place')
+    // }
+    // attachEvent()
+    // jQuery - on
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget, clientX, clientY, screenX, screenY
+    // altKey, ctrlKey, shiftKey, keyCode
+
+    // BEST APPROACH
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     // alert('Devine Place')
+    //     console.log(e);   
+    // }, false)
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("clicked inside the ul");   
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation()   
+    // },false)
+    
+    // document.getElementById('google', function(e){
+    //     e.preventDefault()
+    //     e.stopPropagation()
+    //     console.log("Google Clicked");
+        
+    // } , false)
+    document.querySelector('#images').addEventListener('click', function(e){
+        // console.log(e.target.parentNode);
+        // let removeIt = e.target.parentNode  in this approach after clicking in list element whole page is removed so here we can not use parentNode it marks ul that is parentNode of li
+
+        console.log(e.target.tagName);
+        if (e.target.tagName ==='IMG') {
+        let removeIt = e.target.parentNode
+        removeIt.remove()
+        }
+      
+       // removeIt.parentNode.removeChild(removeIt)
+    } ,false)
+
+</script>
+</html>
