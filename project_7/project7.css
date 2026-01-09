@@ -1,0 +1,51 @@
+table, th, td{
+    border: 1px solid #f5eeee;
+}
+.project{
+    background-color: #1c1c1c;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+}
+.color{
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+}
+
+body {
+  background-color: #212121;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+nav {
+  width: 100%;
+  padding: 40px;
+  background: #f3e1e1;
+}
+
+nav .button {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+nav button a {
+  text-decoration: black;
+  color: rgb(23, 20, 20);
+  font-size: large;
+  padding: 20px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
